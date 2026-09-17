@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSI Student Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <h1>HSI STUDENT MANAGEMENT</h1>
+      <p>Student CRUD — Vanilla JavaScript + LocalStorage</p>
+    </header>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span>Total Siswa</span>
+        <strong id="totalStudents">0</strong>
+      </div>
+
+      <div class="stat-card">
+        <span>Rata-rata Nilai</span>
+        <strong id="averageScore">0</strong>
+      </div>
+    </section>
+
+    <div id="alertMessage" class="alert"></div>
+
+    <section class="form-section">
+      <h2 id="formTitle">Tambah Siswa</h2>
+
+      <form id="studentForm">
+        <div class="form-group">
+          <label for="studentName">Nama Siswa</label>
+          <input
+            type="text"
+            id="studentName"
+            placeholder="Masukkan nama siswa"
+            autocomplete="off"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="studentScore">Nilai</label>
+          <input
+            type="number"
+            id="studentScore"
+            placeholder="0 - 100"
+            min="0"
+            max="100"
+            required
+          >
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" id="submitButton">Tambah Siswa</button>
+          <button type="button" id="cancelEditButton" class="cancel-button" hidden>
+            Batal Edit
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <div class="list-header">
+        <h2>Daftar Siswa</h2>
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Cari siswa..."
+          autocomplete="off"
+        >
+      </div>
+
+      <div id="studentList"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

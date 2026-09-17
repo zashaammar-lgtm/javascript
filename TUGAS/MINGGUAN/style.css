@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f5f7;
+  color: #222;
+  padding: 40px 20px;
+}
+
+.container {
+  width: min(100%, 900px);
+  margin: auto;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #666;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.stat-card span {
+  display: block;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.stat-card strong {
+  font-size: 30px;
+}
+
+.alert {
+  min-height: 0;
+  margin-bottom: 15px;
+}
+
+.alert.show {
+  padding: 13px 15px;
+  background: #e9f7ee;
+  color: #176b35;
+  border: 1px solid #b8e2c5;
+  border-radius: 8px;
+}
+
+.form-section,
+.list-section {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: 0;
+  border-radius: 7px;
+  padding: 11px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  background: #222;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.cancel-button {
+  background: #777;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.list-header h2 {
+  margin: 0;
+}
+
+.list-header input {
+  max-width: 240px;
+}
+
+.student-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  border-top: 1px solid #eee;
+}
+
+.student-info h3 {
+  margin-bottom: 6px;
+}
+
+.student-info p {
+  color: #666;
+}
+
+.student-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.edit-button {
+  background: #333;
+}
+
+.delete-button {
+  background: #b42318;
+}
+
+.empty-state {
+  color: #777;
+  text-align: center;
+  padding: 25px 0;
+}
+
+@media (max-width: 650px) {
+  body {
+    padding: 25px 15px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .list-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .list-header input {
+    max-width: none;
+  }
+
+  .student-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .student-actions {
+    width: 100%;
+  }
+
+  .student-actions button {
+    flex: 1;
+  }
+}
