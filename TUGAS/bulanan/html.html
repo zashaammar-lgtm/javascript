@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Voting Project</h1>
+        <p class="subtitle">Pilih project favoritmu!</p>
+
+        <div class="total">
+            Total Vote: <b id="totalVotesText">0</b>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🎮</div>
+                <h2>Mini Game</h2>
+                <p>Game sederhana menggunakan JavaScript.</p>
+
+                <div class="info">
+                    <span><b id="votes-game">0</b> vote</span>
+                    <span id="percent-game">0%</span>
+                </div>
+
+                <div class="bar">
+                    <div id="bar-game"></div>
+                </div>
+
+                <button id="btn-game">Vote</button>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">🛒</div>
+                <h2>Mini Store</h2>
+                <p>Website toko sederhana.</p>
+
+                <div class="info">
+                    <span><b id="votes-store">0</b> vote</span>
+                    <span id="percent-store">0%</span>
+                </div>
+
+                <div class="bar">
+                    <div id="bar-store"></div>
+                </div>
+
+                <button id="btn-store">Vote</button>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">📝</div>
+                <h2>To-Do App</h2>
+                <p>Aplikasi untuk mencatat tugas.</p>
+
+                <div class="info">
+                    <span><b id="votes-todo">0</b> vote</span>
+                    <span id="percent-todo">0%</span>
+                </div>
+
+                <div class="bar">
+                    <div id="bar-todo"></div>
+                </div>
+
+                <button id="btn-todo">Vote</button>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">🧠</div>
+                <h2>Quiz App</h2>
+                <p>Aplikasi kuis sederhana.</p>
+
+                <div class="info">
+                    <span><b id="votes-quiz">0</b> vote</span>
+                    <span id="percent-quiz">0%</span>
+                </div>
+
+                <div class="bar">
+                    <div id="bar-quiz"></div>
+                </div>
+
+                <button id="btn-quiz">Vote</button>
+            </div>
+
+        </div>
+
+
+        <div class="leader">
+            <b>🏆 Project Terpopuler</b>
+
+            <h2 id="leaderTitle">-</h2>
+
+            <p id="leaderDesc">Belum ada vote.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
