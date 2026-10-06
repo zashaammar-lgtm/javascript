@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍲 Recipe Finder</h1>
+    <p>Temukan resep favoritmu dengan mudah!</p>
+  </header>
+
+  <main class="container">
+    <!-- Section Search & Filter -->
+    <section class="controls">
+      <input type="text" id="search-input" placeholder="Cari resep (contoh: Pizza)...">
+      
+      <select id="meal-type-filter">
+        <option value="">Semua Kategori</option>
+        <option value="Dinner">Dinner</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Snack">Snack</option>
+        <option value="Dessert">Dessert</option>
+      </select>
+
+      <button id="show-favorites-btn">❤️ Favorit Saya (<span id="fav-count">0</span>)</button>
+    </section>
+
+    <!-- Daftar Resep -->
+    <section id="recipe-list" class="recipe-grid">
+      <!-- Card resep akan dimuat via JS -->
+    </section>
+  </main>
+
+  <!-- Modal Detail Resep -->
+  <div id="recipe-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal" class="close-btn">&times;</span>
+      <div id="modal-body">
+        <!-- Detail resep akan dimuat via JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
